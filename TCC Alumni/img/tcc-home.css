@@ -1,0 +1,321 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Raleway', sans-serif;
+}
+section{
+    padding: 60px 0;
+    overflow: hidden;
+}
+.section_bg{
+    background-color: #e9e9eb;
+}
+.section_title{
+    padding-bottom: 30px;
+}
+.section_title p{
+    margin-bottom: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #444444;
+}
+.section_title h2{
+    font-weight: bold;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.section_title h2::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #800000;
+    bottom: 0;
+    left: 0;
+}
+/** Navigation bar **/
+#navigation{
+    top: 20px;
+    padding: 0;
+    transition: 0.5s all;
+}
+#navigation .logo{
+    padding: 17px 30px;
+    background-color: #800000;
+}
+#navigation .logo a{
+    font-size: 26px;
+    padding: 0;
+    line-height: 1;
+    font-weight: 500;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+#navbarNav{
+    background-color: #fff;
+}
+#navigation #navbarNav a{
+  
+
+    position: relative;
+    color: #36343a;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s all;
+}
+#navigation #navbarNav a:hover{
+    color: #800000;
+    text-decoration: none;
+}
+#navigation #get-started a{
+    background-color: #800000;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 25px;
+    margin: 0 15px;
+}
+#navigation #get-started a:hover{
+    color: #fff;
+    background-color:  #db0f27;
+}
+#navigation.nav-scroll{
+    background-color: #fff;
+    top: 0;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+
+/** Navigation bar end **/
+
+/** Banner section **/
+#hero{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url(mountain1234\ \(1\).jpg); 
+    background-position: center;
+    background-size: cover;
+    
+}
+
+#hero .container{
+    padding-top: 80px;
+}
+
+#hero h1{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+}
+
+#hero h2{
+    color: #eee;
+    margin-bottom: 40px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/** Banner section end **/
+
+/** About section **/
+.about .content h2{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.about .content h3{
+    font-weight: 500;
+    line-height: 32px;
+    font-size: 24px;
+}
+.about .content ul{
+    list-style-type: none;
+    padding: 0;
+}
+.about .content ul li{
+    padding: 10px 0 0 20px;
+    display: flex;
+}
+.about .content ul li p{
+    margin-bottom: 0;
+}
+.about .content ul li i{
+    font-size: 20px;
+    color: #800000;
+    margin-right: 7px;
+}
+/** About section end **/
+
+/** Why us section **/
+.why_us .content{
+    padding: 30px;
+    background-color: #800000;
+    border-radius: 20px;
+    color: #fff;
+}
+.why_us .content h3{
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.why_us .content p{
+    margin-bottom: 30px;
+}
+
+
+.why_us .icon_boxes .icon_box{
+    text-align: center;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 40px 30px;
+    width: 100%;
+    box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
+    transition: 0.3s ease-in-out;
+}
+.why_us .icon_boxes .icon_box:hover{
+    box-shadow: 0px 5px 25px rgba(0,0,0,0.30);
+}
+.why_us .icon_boxes .icon_box i{
+    font-size: 40px;
+    color: #800000;
+    margin-bottom: 30px;
+}
+.why_us .icon_boxes .icon_box h4{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+}
+.why_us .icon_boxes .icon_box p{
+    font-size: 15px;
+    color: #848484;
+}
+/** Why us section end **/
+
+ 
+
+
+/** Team section **/
+.team .member{
+    padding: 30px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    text-align: center;
+}
+.team .member .pic{
+    width: 150px;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    overflow: hidden;
+}
+.team .member .member_info h4{
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #36343a;
+}
+.team .member .member_info span{
+    display: block;
+    font-size: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    color: #444444;
+}
+.team .member .member_info span::after{
+    
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 1px;
+    background-color: #b5b3ba;
+}
+.team .member .member_info p{
+    margin: 10px 0 0 0;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: #444444;
+}
+.team .member .member_info .social{
+    margin-top: 12px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+.team .member .member_info .social a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #a8a5ae;
+    margin: 0 3px;
+    transition: 0.3s ease-in-out;
+}
+.team .member .member_info .social a:hover{
+    background-color: #800000;
+}
+.team .member .member_info .social a i{
+    color: #fff;
+    font-size: 16px;
+}
+/** Team section end **/
+
+
+
+/** back to top button**/
+.back_to_top{
+    position: fixed;
+    visibility: hidden;
+    
+    right: 15px;
+    bottom: 15px;
+    
+    background-color: #800000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: 0.4s all;
+}
+.back_to_top i{
+    color: #fff;
+    font-size: 18px;
+}
+.back_to_top:hover{
+    background-color:  #db0f27;
+}
+.back_to_top.show_btn{   
+   
+    visibility: visible;
+}
+/** back to top button end **/

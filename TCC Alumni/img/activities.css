@@ -1,0 +1,93 @@
+
+.account_name{
+    color:rgba(0,0,0,0.6);font-size: 0.8rem;
+}
+
+.account_feed{
+    display: flex;
+    flex-direction: row;
+    margin-top:5px;
+    padding:10px 5px;
+    border-bottom: 1px solid lightgray;
+    flex-wrap: wrap;
+
+}
+.account_picture{
+    height:40px;
+    object-fit: contain;
+}
+.account_info{
+    margin-left:5px;
+}
+
+
+
+
+.small_screen{
+    display: none;
+}
+
+.option_text{
+    font-size: 0.9rem;
+    font-weight: var(--message_font_weight);
+}
+.dropdown{
+    position:relative;
+ 
+
+}
+
+.dropdown-content{
+    display:none;
+    height:fit-content;
+    padding:5px 0px;
+    position:absolute;
+    left:-190px;
+    
+    background-color: white;
+    border-radius:10px;
+    border:1px solid lightgray;
+    width: 250px;
+
+}
+
+.dropdown .title{
+    font-size: var(--message_title_size);
+    font-weight: 600;
+    padding:10px;
+    padding-bottom:5px;
+    
+}
+.list{
+    padding:8px 10px;
+    font-size: small;
+}
+
+.list:hover{
+    text-decoration: underline;
+    background-color: var(--list_background);
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+
+.dropdown_profile{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    padding:10px;
+}
+
+.profile_view_button{
+    border:1px solid blue;
+    text-align: center;
+    padding:5px ;
+    margin: 10px;
+    
+    border-radius: 500px;
+}
+
+
+
